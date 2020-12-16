@@ -1,0 +1,40 @@
+// В этом файле должны быть стили для БЭМ-блока field-search, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.field-search {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: inline-block;
+
+  &__input-wrap {
+    position: relative;
+    display: inline-block;
+  }
+  &__input {
+    width: 390px;
+    height: 40px;
+    background: #F7F2F0;
+    border: 1px solid #E9E4E1;
+    box-sizing: border-box;
+    border-radius: 90px;
+    padding-left: 40px;
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    background: transparent;
+    padding: 0;
+    border:none;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    .icon {
+      vertical-align: middle;
+    }
+  }
+}
+

@@ -1,0 +1,11 @@
+// В этом файле должны быть стили для БЭМ-блока pattern-section, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.pattern-section {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background-color: #F6F2F0;
+  background-image: url(../img/pattern.jpg);
+}

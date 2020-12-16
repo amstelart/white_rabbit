@@ -1,0 +1,33 @@
+// В этом файле должны быть стили для БЭМ-блока add-favorites, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.add-favorites {
+
+  $block-name:                &; // #{$block-name}__element
+
+  width: 46px;
+  height: 46px;
+  background-color: #F6F2F0;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart.svg');
+  }
+
+  &.added {
+    &:before {
+      background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart_fill.svg');
+    }
+  }
+}

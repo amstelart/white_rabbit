@@ -1,0 +1,28 @@
+// В этом файле должны быть стили для БЭМ-блока thumb, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+$gray-light:                  hsl(0, 0%, 60%) !default;
+$link-color:                  hsl(208, 98%, 43%) !default;
+$line-height:                 1.375 !default;
+$body-bg:                     #fff !default;
+$border-radius:               3px !default;
+$transition-time:             0.3s !default;
+
+.thumb {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: inline-block;
+  // padding: 0.4rem;
+  line-height: $line-height;
+  background-color: $body-bg;
+  border: 5px solid #fff;
+  border-radius: 0;
+  transition: all $transition-time;
+  box-shadow:(0px 5px 10px rgba(61, 51, 45, 0.13));
+
+  // a:hover & {
+  //   border-color: $link-color;
+  // }
+}
