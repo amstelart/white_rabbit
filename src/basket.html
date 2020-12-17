@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>Корзина</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -16,8 +16,8 @@
 
       @@include('blocks/page-header/page-header.html')
 
-      <div class="container">
-        <main class="main basket" role="main">
+      <main class="main" role="main">
+        <div class="container">
           <div class="main__head">
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
@@ -26,85 +26,87 @@
             </ul>
             <h1>Корзина</h1>
           </div>
-          <div class="basket__list">
-            <div class="basket__item">
-              <div class="basket-card">
-                <div class="basket-card__view">
-                  <img src="img/product-img.jpg" alt="">
+          <div class="basket">
+            <div class="basket__list">
+              <div class="basket__item">
+                <div class="basket-card">
+                  <div class="basket-card__view">
+                    <img src="img/product-img.jpg" alt="">
+                  </div>
+                  <div class="basket-card__info">
+                    <div>133-20 Primareva (Весна)</div>
+                    <div>Размер: 100х100</div>
+                    <div>Количество цветов: 10</div>
+                  </div>
+                  <div class="basket-card__price">
+                    <span class="price-amount price-amount--old">3500 руб.</span>
+                    <span class="price-amount">3000 руб.</span>
+                  </div>
                 </div>
-                <div class="basket-card__info">
-                  <div>133-20 Primareva (Весна)</div>
-                  <div>Размер: 100х100</div>
-                  <div>Количество цветов: 10</div>
+              </div>
+              <div class="basket__item">
+                <div class="basket-card">
+                  <div class="basket-card__view">
+                    <img src="img/product-img.jpg" alt="">
+                  </div>
+                  <div class="basket-card__info">
+                    <div>133-20 Primareva (Весна)</div>
+                    <div>Размер: 100х100</div>
+                    <div>Количество цветов: 10</div>
+                  </div>
+                  <div class="basket-card__price">
+                    <span class="price-amount price-amount--old">3500 руб.</span>
+                    <span class="price-amount">3000 руб.</span>
+                  </div>
                 </div>
-                <div class="basket-card__price">
-                  <span class="price-amount price-amount--old">3500 руб.</span>
-                  <span class="price-amount">3000 руб.</span>
+              </div>
+              <div class="basket__item">
+                <div class="basket-card">
+                  <div class="basket-card__view">
+                    <img src="img/product-img.jpg" alt="">
+                  </div>
+                  <div class="basket-card__info">
+                    <div>133-20 Primareva (Весна)</div>
+                    <div>Размер: 100х100</div>
+                    <div>Количество цветов: 10</div>
+                  </div>
+                  <div class="basket-card__price">
+                    <span class="price-amount price-amount--old">3500 руб.</span>
+                    <span class="price-amount">3000 руб.</span>
+                  </div>
+                </div>
+              </div>
+              <div class="basket__item">
+                <div class="basket-card">
+                  <div class="basket-card__view">
+                    <img src="img/product-img.jpg" alt="">
+                  </div>
+                  <div class="basket-card__info">
+                    <div>133-20 Primareva (Весна)</div>
+                    <div>Размер: 100х100</div>
+                    <div>Количество цветов: 10</div>
+                  </div>
+                  <div class="basket-card__price">
+                    <span class="price-amount price-amount--old">3500 руб.</span>
+                    <span class="price-amount">3000 руб.</span>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="basket__item">
-              <div class="basket-card">
-                <div class="basket-card__view">
-                  <img src="img/product-img.jpg" alt="">
+            <div class="basket__sidebar">
+              <div class="basket-action">
+                <div>Всего товаров: 4</div>
+                <div>
+                  <span>Сумма:</span>
+                  <span>12 000 руб.</span>
                 </div>
-                <div class="basket-card__info">
-                  <div>133-20 Primareva (Весна)</div>
-                  <div>Размер: 100х100</div>
-                  <div>Количество цветов: 10</div>
-                </div>
-                <div class="basket-card__price">
-                  <span class="price-amount price-amount--old">3500 руб.</span>
-                  <span class="price-amount">3000 руб.</span>
-                </div>
-              </div>
-            </div>
-            <div class="basket__item">
-              <div class="basket-card">
-                <div class="basket-card__view">
-                  <img src="img/product-img.jpg" alt="">
-                </div>
-                <div class="basket-card__info">
-                  <div>133-20 Primareva (Весна)</div>
-                  <div>Размер: 100х100</div>
-                  <div>Количество цветов: 10</div>
-                </div>
-                <div class="basket-card__price">
-                  <span class="price-amount price-amount--old">3500 руб.</span>
-                  <span class="price-amount">3000 руб.</span>
-                </div>
-              </div>
-            </div>
-            <div class="basket__item">
-              <div class="basket-card">
-                <div class="basket-card__view">
-                  <img src="img/product-img.jpg" alt="">
-                </div>
-                <div class="basket-card__info">
-                  <div>133-20 Primareva (Весна)</div>
-                  <div>Размер: 100х100</div>
-                  <div>Количество цветов: 10</div>
-                </div>
-                <div class="basket-card__price">
-                  <span class="price-amount price-amount--old">3500 руб.</span>
-                  <span class="price-amount">3000 руб.</span>
-                </div>
+                <a href="#" class="btn btn--md btn--red">Оформить заказ</a>
+                <a href="#" class="btn btn--md">Продолжить покупки</a>
               </div>
             </div>
           </div>
-          <div class="basket__sidebar">
-            <div class="basket-action">
-              <div>Всего товаров: 4</div>
-              <div>
-                <span>Сумма:</span>
-                <span>12 000 руб.</span>
-              </div>
-              <a href="#" class="btn btn--md btn--red">Оформить заказ</a>
-              <a href="#" class="btn btn--md">Продолжить покупки</a>
-            </div>
-          </div>
-        </main>
-      </div>
+        </div>
+      </main>
 
     </div>
 

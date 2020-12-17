@@ -79,7 +79,10 @@
     "basket-action": [],
     "order": [],
     "payment-info": [],
-    "payment-method": []
+    "payment-method": [],
+    "product": [],
+    "product-action": [],
+    "product-carousel": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -100,16 +100,16 @@ img {
   padding-bottom: 60px;
 
   &__head {
-    @include row();
+    // @include row();
   }
 
-  &__title {
-    @include col();
-  }
+  // &__title {
+  //   @include col();
+  // }
 
-  &__breadcrumbs {
-    @include col();
-  }
+  // &__breadcrumbs {
+  //   @include col();
+  // }
 }
 
 .section {

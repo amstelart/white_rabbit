@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Карта сайта</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+  <style>
+    ul {
+      list-style: none;
+      font-size: 16px;
+    }
+    ul li {
+      margin-bottom: 8px;
+    }
+    ul a {
+      text-decoration: none;
+      color: #000;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main" role="main">
+        <div class="container">
+          <ul>
+            <li><a href="index.html" target="_blank">Главная</a></li>
+            <li><a href="catalog.html" target="_blank">Каталог</a></li>
+            <li><a href="product.html" target="_blank">Товар</a></li>
+            <li><a href="basket.html" target="_blank">Корзина</a></li>
+            <li><a href="order.html" target="_blank">Заказ</a></li>
+            <li><a href="video.html" target="_blank">Видео</a></li>
+          </ul>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

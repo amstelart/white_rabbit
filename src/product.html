@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Главная</title>
+  <title>Товар</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -16,45 +16,74 @@
 
       @@include('blocks/page-header/page-header.html')
 
-      <div class="main-carousel">
-        <img src="img/carousel-img.jpg" alt="" class="main-carousel__img">
-        <img src="img/carousel-img.jpg" alt="" class="main-carousel__img">
-        <img src="img/carousel-img.jpg" alt="" class="main-carousel__img">
-      </div>
+      <main class="main" role="main">
 
-      <main role="main">
-
-        <section class="popular section">
+        <div class="product">
           <div class="container">
-            <h2 class="section__title-decor">Популярные товары</h2>
-            <div class="popular__list">
-              <div class="popular__item">
-                @@include('blocks/product-card/product-card.html')
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Схемы</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Пейзажи</a></li>
+            </ul>
+            <div class="product__head">
+              <h1 class="product__title">133-20 Primavera (Весна)</h1>
+            </div>
+            <div class="product__row">
+              <div class="product__view">
+                <div class="product-carousel">
+                  <div class="product-carousel__labels">
+                    <div class="label label--new">new</div>
+                    <div class="label label--hit">hit</div>
+                    <div class="label label--sale">sale</div>
+                  </div>
+                </div>
               </div>
-              <div class="popular__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="popular__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="popular__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="popular__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="popular__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="popular__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="popular__item">
-                @@include('blocks/product-card/product-card.html')
+              <div class="product__body">
+                <div class="product__part">
+                  <div class="product__part-title">Характеристики:</div>
+                  <ul class="product__list">
+                    <li class="product__list-item">
+                      <span class="plt">Категория:</span>
+                      <span>Смешное, забавное, Разное</span>
+                    </li>
+                    <li class="product__list-item">
+                      <span class="plt">Рекомендуемая основа:</span>
+                      <span>Аида 14</span>
+                    </li>
+                    <li class="product__list-item">
+                      <span class="plt">Размер:</span>
+                      <span>110х79кр см</span>
+                    </li>
+                    <li class="product__list-item">
+                      <span class="plt">Количество цветов:</span>
+                      <span>19 шт</span>
+                    </li>
+                    <li class="product__list-item">
+                      <span class="plt">Виды стежков:</span>
+                      <span>Фр. узелок, Бэкстич, Крест</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="product__part">
+                  <div class="product-action">
+                    <div class="product-action__price">
+                      <span class="price-amount price-amount--old">3500 руб.</span>
+                      <span class="price-amount">3000 руб.</span>
+                    </div>
+                    <div class="product-action__btn">
+                      <a href="#" class="btn btn--red">В корзину</a>
+                    </div>
+                  </div>
+                  <div class="product-action-inf">Отправка схемы осуществляется сразу после оплаты заказа</div>
+                </div>
+                <div class="product__part">
+                  <div class="product__part-title">Описание схемы:</div>
+                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <section class="reviews section pattern-section">
           <div class="container">
@@ -134,28 +163,6 @@
                 </div>
                 <div class="about__img-wrap">
                   <img class="thumb" src="img/about-img-02.jpg" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="gallery section pattern-section">
-          <div class="container">
-            <h2 class="section__title-decor">Работы наших покупателей</h2>
-            <div class="gallery__wrap">
-              <div class="gallery__carousel">
-                <div class="gallery__item">
-                  <a class="thumb" href="#"><img src="img/gallery-img-prev-01.jpg" alt=""></a>
-                </div>
-                <div class="gallery__item">
-                  <a class="thumb" href="#"><img src="img/gallery-img-prev-02.jpg" alt=""></a>
-                </div>
-                <div class="gallery__item">
-                  <a class="thumb" href="#"><img src="img/gallery-img-prev-03.jpg" alt=""></a>
-                </div>
-                <div class="gallery__item">
-                  <a class="thumb" href="#"><img src="img/gallery-img-prev-01.jpg" alt=""></a>
                 </div>
               </div>
             </div>

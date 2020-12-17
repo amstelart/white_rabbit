@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NTH start project</title>
+  <title>Каталог</title>
   <meta name="description" content="">
   @@include('_include/page_head.html')
 </head>
@@ -16,68 +16,69 @@
 
       @@include('blocks/page-header/page-header.html')
 
-      <div class="container">
-        <main class="main catalog" role="main">
-          <div class="catalog__sidebar">
-            <div class="filters">
-              <div class="filters__head">
-                Подобрать схему
-              </div>
-              <div class="filters__part">
-                <div class="filters__part-head">Размер</div>
-              </div>
-              <div class="filters__part">
-                <div class="filters__part-head">Сложность</div>
-              </div>
-              <div class="filters__part">
-                <div class="filters__part-head">Количество цветов</div>
-              </div>
-              <div class="filters__part">
-                <div class="filters__part-head">Количество цветов</div>
-              </div>
-              <div class="filters__part">
-                <div class="filters__part-head">Цена</div>
-              </div>
-              <div class="filters__action">
-                <div class="filters__action-item">
-                  <a href="#" class="btn btn--sm btn--red">Подобрать</a>
+      <main class="main" role="main">
+        <div class="container">
+          <div class="catalog">
+            <div class="catalog__sidebar">
+              <div class="filters">
+                <div class="filters__head">
+                  Подобрать схему
                 </div>
-                <div class="filters__action-item">
-                  <a href="#" class="btn btn--sm btn--red">Сбросить</a>
+                <div class="filters__part">
+                  <div class="filters__part-head">Размер</div>
+                </div>
+                <div class="filters__part">
+                  <div class="filters__part-head">Сложность</div>
+                </div>
+                <div class="filters__part">
+                  <div class="filters__part-head">Количество цветов</div>
+                </div>
+                <div class="filters__part">
+                  <div class="filters__part-head">Количество цветов</div>
+                </div>
+                <div class="filters__part">
+                  <div class="filters__part-head">Цена</div>
+                </div>
+                <div class="filters__action">
+                  <div class="filters__action-item">
+                    <a href="#" class="btn btn--sm btn--red">Подобрать</a>
+                  </div>
+                  <div class="filters__action-item">
+                    <a href="#" class="btn btn--sm btn--red">Сбросить</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="catalog__showcase">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Схемы</a></li>
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Пейзажи</a></li>
+              </ul>
+              <h1>Пейзажи</h1>
+              <div class="catalog__list">
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
+                </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
+                </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
+                </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
+                </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
+                </div>
+                <div class="catalog__item">
+                  @@include('blocks/product-card/product-card.html')
                 </div>
               </div>
             </div>
           </div>
-          <div class="catalog__showcase">
-            <ul class="breadcrumbs">
-              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
-              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Схемы</a></li>
-              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Пейзажи</a></li>
-            </ul>
-            <h1>Пейзажи</h1>
-            <div class="catalog__list">
-              <div class="catalog__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="catalog__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="catalog__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="catalog__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="catalog__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-              <div class="catalog__item">
-                @@include('blocks/product-card/product-card.html')
-              </div>
-            </div>
-          </div>
-        </main>
-
+        </div>
         <section class="reviews section pattern-section">
           <div class="container">
             <h2 class="section__title-decor">Отзывы</h2>
@@ -161,7 +162,7 @@
             </div>
           </div>
         </section>
-      </div>
+      </main>
 
     </div>
 
