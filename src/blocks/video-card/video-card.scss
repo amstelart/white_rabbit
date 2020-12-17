@@ -1,0 +1,21 @@
+// В этом файле должны быть стили для БЭМ-блока video-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.video-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  background: #FFFFFF;
+  padding: 30px;
+  box-shadow: 0px 5px 10px rgba(61, 51, 45, 0.13);
+
+  &__preview {
+    flex-basis: 25%;
+  }
+  &__text {
+    flex-basis: 75%;
+    padding-left: 30px;
+  }
+}

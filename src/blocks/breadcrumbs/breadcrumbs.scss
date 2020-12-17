@@ -17,13 +17,13 @@ $text-color:                  hsl(0, 0%, 10%) !default;
 
   &__item {
     display: inline-block;
-    margin-right: 0.6em;
+    margin-right: 0.4em;
     white-space: nowrap;
 
     &:not(:last-child):after {
-      content: '>';
+      content: '/';
       display: inline-block;
-      margin-left: 0.8em;
+      margin-left: 0.6em;
       color: $gray;
     }
   }

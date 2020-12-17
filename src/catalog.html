@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <div class="container">
+        <main class="main catalog" role="main">
+          <div class="catalog__sidebar">
+            <div class="filters">
+              <div class="filters__head">
+                Подобрать схему
+              </div>
+              <div class="filters__part">
+                <div class="filters__part-head">Размер</div>
+              </div>
+              <div class="filters__part">
+                <div class="filters__part-head">Сложность</div>
+              </div>
+              <div class="filters__part">
+                <div class="filters__part-head">Количество цветов</div>
+              </div>
+              <div class="filters__part">
+                <div class="filters__part-head">Количество цветов</div>
+              </div>
+              <div class="filters__part">
+                <div class="filters__part-head">Цена</div>
+              </div>
+              <div class="filters__action">
+                <div class="filters__action-item">
+                  <a href="#" class="btn btn--sm btn--red">Подобрать</a>
+                </div>
+                <div class="filters__action-item">
+                  <a href="#" class="btn btn--sm btn--red">Сбросить</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__showcase">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Схемы</a></li>
+              <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Пейзажи</a></li>
+            </ul>
+            <h1>Пейзажи</h1>
+            <div class="catalog__list">
+              <div class="catalog__item">
+                @@include('blocks/product-card/product-card.html')
+              </div>
+              <div class="catalog__item">
+                @@include('blocks/product-card/product-card.html')
+              </div>
+              <div class="catalog__item">
+                @@include('blocks/product-card/product-card.html')
+              </div>
+              <div class="catalog__item">
+                @@include('blocks/product-card/product-card.html')
+              </div>
+              <div class="catalog__item">
+                @@include('blocks/product-card/product-card.html')
+              </div>
+              <div class="catalog__item">
+                @@include('blocks/product-card/product-card.html')
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <section class="reviews section pattern-section">
+          <div class="container">
+            <h2 class="section__title-decor">Отзывы</h2>
+            <div class="reviews__wrap">
+              <div class="reviews__carousel">
+                <div class="reviews__item">
+                  <div class="reviews__header">
+                    <div class="reviews__date">28.11.2020</div>
+                    <div class="reviews__title">Светлана николаевна</div>
+                  </div>
+                  <div class="reviews__body">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                  </div>
+                  <div class="reviews__footer">
+                    <a href="#" class="reviews__photo-link">
+                      <span class="pl-text">Схема: 133-20 Primavera (Весна)</span>
+                      <span class="pl-btn">Открыть фото</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__header">
+                    <div class="reviews__date">28.11.2020</div>
+                    <div class="reviews__title">Светлана николаевна</div>
+                  </div>
+                  <div class="reviews__body">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                  </div>
+                  <div class="reviews__footer">
+                    <a href="#" class="reviews__photo-link">
+                      <span class="pl-text">Схема: 133-20 Primavera (Весна)</span>
+                      <span class="pl-btn">Открыть фото</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="reviews__item">
+                  <div class="reviews__header">
+                    <div class="reviews__date">28.11.2020</div>
+                    <div class="reviews__title">Светлана николаевна</div>
+                  </div>
+                  <div class="reviews__body">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                  </div>
+                  <div class="reviews__footer">
+                    <a href="#" class="reviews__photo-link">
+                      <span class="pl-text">Схема: 133-20 Primavera (Весна)</span>
+                      <span class="pl-btn">Открыть фото</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__action">
+                <a href="#" class="btn btn--red">Написать отзыв</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="about section">
+          <div class="container">
+            <h2 class="section__title-decor">Следуй за кроликом, вышей свою мечту!</h2>
+            <div class="about__wrap">
+              <div class="about__box">
+                <div class="about__img-wrap">
+                  <img class="thumb" src="img/about-img-01.jpg" alt="">
+                </div>
+                <div class="about__text-wrap">
+                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                </div>
+              </div>
+              <div class="about__box">
+                <div class="about__text-wrap">
+                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+                </div>
+                <div class="about__img-wrap">
+                  <img class="thumb" src="img/about-img-02.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

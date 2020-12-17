@@ -1,0 +1,23 @@
+// В этом файле должны быть стили для БЭМ-блока basket-card, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.basket-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 20px;
+  display: flex;
+
+  &__view {
+    img {
+      max-width: 69px;
+    }
+    margin-right: 17px;
+  }
+  &__info {
+    flex-grow: 1;
+    margin-right: 17px;
+  }
+  &__price {}
+}

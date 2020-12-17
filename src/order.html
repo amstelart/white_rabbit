@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>NTH start project</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main order" role="main">
+        <div class="container">
+          <div class="main__head">
+            <div class="main__breadcrumbs">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Оформление заказа</a></li>
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Корзина</a></li>
+              </ul>
+            </div>
+            <h1 class="main__title">Оформление заказа</h1>
+          </div>
+          <div class="order__inner">
+            <div class="order__item">
+              <div class="payment-info">
+                <div class="payment-info__head">О покупателе</div>
+              </div>
+            </div>
+            <div class="order__item">
+              <div class="payment-method">
+                <div class="payment-method__head">Способы оплаты</div>
+              </div>
+            </div>
+            <div class="order__action">
+              <a href="#" class="btn btn--red">Оплатить</a>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>

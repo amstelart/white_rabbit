@@ -69,7 +69,17 @@
     "add-favorites": [],
     "reviews": [],
     "user-option": [],
-    "main-carousel": []
+    "main-carousel": [],
+    "catalog": [],
+    "filters": [],
+    "video": [],
+    "video-card": [],
+    "basket": [],
+    "basket-card": [],
+    "basket-action": [],
+    "order": [],
+    "payment-info": [],
+    "payment-method": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

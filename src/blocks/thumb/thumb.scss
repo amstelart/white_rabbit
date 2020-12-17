@@ -25,4 +25,10 @@ $transition-time:             0.3s !default;
   // a:hover & {
   //   border-color: $link-color;
   // }
+
+  &--video {
+    box-shadow: none;
+    border: none;
+    display: block;
+  }
 }

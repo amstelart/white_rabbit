@@ -2,19 +2,19 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
-$gray-lighter:                hsl(0, 0%, 80%) !default;
-$gray-lightest:               hsl(0, 0%, 90%) !default;
-$text-color:                  hsl(0, 0%, 10%) !default;
-$line-height:                 1.375em;
+$gray-lighter: hsl(0, 0%, 80%) !default;
+$gray-lightest: hsl(0, 0%, 90%) !default;
+$text-color: hsl(0, 0%, 10%) !default;
+$line-height: 1.375em;
 
-$field-padding-vertical:      0.3em !default;
-$field-padding-horizontal:    0.7em !default;
+$field-padding-vertical: 0.3em !default;
+$field-padding-horizontal: 0.7em !default;
 
-$border-radius:               3px !default;
+$border-radius: 3px !default;
 
 .btn {
 
-  $block-name:                &; // #{$block-name}__element
+  $block-name: &; // #{$block-name}__element
 
   box-sizing: border-box;
   display: inline-block;
@@ -64,28 +64,38 @@ $border-radius:               3px !default;
     }
   }
 
+  &--sm {
+    font-size: 10px;
+    padding: 12px 16px;
+  }
+
+  &--md {
+    font-size: 13px;
+    padding: 16px 20px;
+  }
+
   // &__icon {
   //   display: inline-block;
   //   vertical-align: middle;
   // }
 
-    &--red {
-      background-color: #CE3434;
+  &--red {
+    background-color: #CE3434;
+    color: #fff;
+    border: none;
+
+    &:hover,
+    &:focus {
       color: #fff;
-      border: none;
-
-      &:hover,
-      &:focus {
-        color: #fff;
-        background-color: #EF5454;
-      }
-
-      &--disabled,
-      &:disabled {
-        color: #fff;
-        background-color: #EF5454;
-      }
+      background-color: #EF5454;
     }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: #EF5454;
+    }
+  }
 
   // &--main {
   //   color: #fff;
