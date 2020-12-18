@@ -1,6 +1,9 @@
 // Если на проекте jQuery
 $(document).ready(function () {
   // code
+  // $(function() {
+  //   $('input, select').styler();
+  // });
   $('.main-carousel').slick({
     dots: false,
     arrows: false,

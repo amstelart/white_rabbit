@@ -55,6 +55,7 @@
     "gulp.spritesmith": "^6.3.0",
     "husky": "^0.14.3",
     "imagemin-pngquant": "^5.0.0",
+    "jquery-form-styler": "^2.0.2",
     "lint-staged": "^5.0.0",
     "merge-stream": "^1.0.1",
     "mkdirp": "^0.5.1",

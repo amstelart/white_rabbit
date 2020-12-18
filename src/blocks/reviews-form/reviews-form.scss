@@ -1,0 +1,47 @@
+// В этом файле должны быть стили для БЭМ-блока reviews-form, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.reviews-form {
+
+  $block-name:                &; // #{$block-name}__element
+
+  background-color: #F6F2F0;
+  background-image: url(../img/pattern.jpg);
+  box-shadow: 0px 5px 10px rgba(61, 51, 45, 0.13);
+  padding: 37px;
+  margin-bottom: 40px;
+
+  .field-text {
+    margin-bottom: 20px;
+  }
+
+  &__action {
+    margin-top: 35px;
+    display: flex;
+
+    .btn {
+      margin-right: 25px;
+    }
+  }
+
+  &__field-file {
+    margin-bottom: 0;
+
+    .field-file__name-text {
+      background: transparent;
+      border: 1px dashed #CE3434;
+      border-radius: 90px;
+      padding: 0 20px 0 0;
+
+      &:before {
+        margin: 0;
+        text-decoration: underline;
+        padding: 15px 0 15px 40px;
+        border: none;
+        background: transparent;
+        margin-right: 20px;
+      }
+    }
+  }
+ }

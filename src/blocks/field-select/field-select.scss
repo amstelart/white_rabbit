@@ -9,6 +9,12 @@ $line-height:                 1.375em !default;
 
 $border-radius:               3px !default;
 
+$field-padding-vertical:      0.7em;
+$field-padding-horizontal:    1em;
+
+$border-radius:               3px;
+$border:                      1px solid #E9E4E1;
+
 .field-select {
 
   $block-name:                &; // #{$block-name}__element
@@ -30,7 +36,7 @@ $border-radius:               3px !default;
     padding: $field-padding-vertical $field-padding-horizontal;
     font-size: inherit;
     font-family: inherit;
-    border: 1px solid $border-color;
+    border: $border;
     border-radius: $border-radius;
     appearance: none;
     background-color: #fff;

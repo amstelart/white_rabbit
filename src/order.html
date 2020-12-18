@@ -32,11 +32,60 @@
             <div class="order__item">
               <div class="payment-info">
                 <div class="payment-info__head">О покупателе</div>
+                <label class="payment-info__field field-text">
+                  <span class="field-text__name">Введите ваше имя:</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+                  </span>
+                </label>
+                <label class="payment-info__field field-text">
+                  <span class="field-text__name">E-mail:</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="placeholder" id="" name="">
+                    <span class="field-text__help-text">На этот email будет отправлена схема сразу после оплаты</span>
+                  </span>
+                </label>
+                <label class="payment-info__field field-select">
+                  <div class="field-select__name">Страна</div>
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" id="" name="">
+                      <option>Значение 1</option>
+                      <option>Значение 2</option>
+                      <option>Значение 3</option>
+                    </select>
+                  </div>
+                </label>
+                <label class="payment-info__field field-select">
+                  <div class="field-select__name">Город</div>
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" id="" name="">
+                      <option>Значение 1</option>
+                      <option>Значение 2</option>
+                      <option>Значение 3</option>
+                    </select>
+                  </div>
+                </label>
               </div>
             </div>
             <div class="order__item">
               <div class="payment-method">
                 <div class="payment-method__head">Способы оплаты</div>
+                <div class="payment-method__fields">
+                  <label class="payment-method__field">
+                    <input class="payment-method__input" type="radio" id="" name="payment-radio" checked>
+                    <div class="payment-method__box">
+                      <img class="payment-method__box-logo" src="img/payment-logo-paypal.png" alt="">
+                      <div class="payment-method__box-text">Подойдет для тех, кто живет за границей</div>
+                    </div>
+                  </label>
+                  <label class="payment-method__field">
+                    <input class="payment-method__input" type="radio" id="" name="payment-radio">
+                    <div class="payment-method__box">
+                      <img class="payment-method__box-logo" src="img/payment-logo-yad.png" alt="">
+                      <div class="payment-method__box-text">Подойдет для тех, кто живет на территории России</div>
+                    </div>
+                  </label>
+                </div>
               </div>
             </div>
             <div class="order__action">

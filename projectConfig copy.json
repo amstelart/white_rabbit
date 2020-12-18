@@ -31,7 +31,6 @@
     ],
     "field-actions": [],
     "form": [],
-    "formstyler": [],
     "code": [],
     "thumb": [],
     "alert": [],
@@ -84,9 +83,7 @@
     "product": [],
     "product-action": [],
     "product-carousel": [],
-    "reviews-form": [],
-    "reviews-list": [],
-    "reviews-card": []
+    "formstyler": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Отзывы</title>
+  <meta name="description" content="">
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main" role="main">
+        <div class="container">
+          <div class="main__head">
+            <div class="main__breadcrumbs">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Отзывы</a></li>
+              </ul>
+            </div>
+            <h1 class="main__title">Отзывы</h1>
+          </div>
+          <form action="" class="reviews-form">
+            <label class="field-text">
+              <span class="field-text__name">Введите ваше имя:</span>
+              <span class="field-text__input-wrap">
+                <input class="field-text__input" type="text" id="" name="">
+              </span>
+            </label>
+            <label class="field-text">
+              <span class="field-text__name">Текст отзыва:</span>
+              <span class="field-text__input-wrap">
+                <textarea class="field-text__input" type="text" rows="4" id="" name=""></textarea>
+              </span>
+            </label>
+            <div class="reviews-form__action">
+              <a href="#" class="btn btn--red">Добавить отзыв</a>
+              <div class="reviews-form__field-file field-file">
+                <label class="field-file__input-wrap">
+                  <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" id="" name="" multiple>
+                  <div class="field-file__name-text" data-button-text="Пикрепить фото"></div>
+                </label>
+              </div>
+            </div>
+          </form>
+          <div class="reviews-list">
+            <div class="reviews-list__item">
+              <div class="reviews-card">
+                <div class="reviews-card__img-wrap">
+                  <img src="img/reviews-card-img.jpg" alt="" class="reviews-card__img">
+                </div>
+                <div class="reviews-card__body">
+                  <div class="reviews-card__date">28.11.2020</div>
+                  <div class="reviews-card__title">Светлана Николаевна</div>
+                  <div class="reviews-card__text">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                  </div>
+                  <div class="reviews-card__scheme">Схема: 133-20 Primavera (Весна)</div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-list__item">
+              <div class="reviews-card">
+                <div class="reviews-card__body">
+                  <div class="reviews-card__date">28.11.2020</div>
+                  <div class="reviews-card__title">Светлана Николаевна</div>
+                  <div class="reviews-card__text">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                  </div>
+                  <div class="reviews-card__scheme">Схема: 133-20 Primavera (Весна)</div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-list__item">
+              <div class="reviews-card">
+                <div class="reviews-card__img-wrap">
+                  <img src="img/reviews-card-img.jpg" alt="" class="reviews-card__img">
+                </div>
+                <div class="reviews-card__body">
+                  <div class="reviews-card__date">28.11.2020</div>
+                  <div class="reviews-card__title">Светлана Николаевна</div>
+                  <div class="reviews-card__text">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                  </div>
+                  <div class="reviews-card__scheme">Схема: 133-20 Primavera (Весна)</div>
+                </div>
+              </div>
+            </div>
+            <div class="reviews-list__item">
+              <div class="reviews-card">
+                <div class="reviews-card__body">
+                  <div class="reviews-card__date">28.11.2020</div>
+                  <div class="reviews-card__title">Светлана Николаевна</div>
+                  <div class="reviews-card__text">
+                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
+                  </div>
+                  <div class="reviews-card__scheme">Схема: 133-20 Primavera (Весна)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pagination">
+            <a href="" class="pagination__item">1</a>
+            <a href="" class="pagination__item">2</a>
+            <a href="" class="pagination__item  pagination__item--active">3</a>
+            <a href="" class="pagination__item">4</a>
+            <a href="" class="pagination__item">5</a>
+            <a href="" class="pagination__item">6</a>
+          </div>
+        </div>
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('_include/page_bottom.html')
+</body>
+</html>
