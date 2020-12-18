@@ -2,7 +2,7 @@
 <html class="no-js  page" lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Главная</title>
+  <title>Заказ</title>
   <meta name="description" content>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="format-detection" content="telephone=no">
@@ -197,322 +197,83 @@
           </div>
         </nav>
       </header>
-      <div class="main-carousel">
-        <img src="img/carousel-img.jpg" alt class="main-carousel__img">
-        <img src="img/carousel-img.jpg" alt class="main-carousel__img">
-        <img src="img/carousel-img.jpg" alt class="main-carousel__img">
-      </div>
-      <main role="main">
-        <section class="popular section">
-          <div class="container">
-            <h2 class="section__title-decor">Популярные товары</h2>
-            <div class="popular__list">
-              <div class="popular__item">
-                <div class="product-card">
-                  <div class="product-card__inner">
-                    <div class="product-card__labels">
-                      <div class="label label--new">new</div>
-                      <div class="label label--hit">hit</div>
-                      <div class="label label--sale">sale</div>
-                    </div>
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-img.jpg" alt>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__title"><a href="#">133-20 Primareva (Весна)</a></div>
-                    </div>
-                    <div class="product-card__price">
-                      <span class="price-amount price-amount--old">3500 руб.</span>
-                      <span class="price-amount">3000 руб.</span>
-                      <div class="add-favorites"></div>
-                    </div>
-                    <div class="product-card__action">
-                      <a href="#" class="btn btn--red">В корзину</a>
-                    </div>
+      <main class="main" role="main">
+        <div class="container">
+          <div class="main__head">
+            <div class="main__breadcrumbs">
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs__item"><a href class="breadcrumbs__link">Главная</a></li>
+                <li class="breadcrumbs__item"><a href class="breadcrumbs__link">Оформление заказа</a></li>
+                <li class="breadcrumbs__item"><a href class="breadcrumbs__link">Корзина</a></li>
+              </ul>
+            </div>
+            <h1 class="main__title">Оформление заказа</h1>
+          </div>
+          <div class="order">
+            <div class="order__item">
+              <div class="payment-info">
+                <div class="payment-info__head">О покупателе</div>
+                <label class="payment-info__field field-text">
+                  <span class="field-text__name">Введите ваше имя:</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="placeholder" id name>
+                  </span>
+                </label>
+                <label class="payment-info__field field-text">
+                  <span class="field-text__name">E-mail:</span>
+                  <span class="field-text__input-wrap">
+                    <input class="field-text__input" type="text" placeholder="placeholder" id name>
+                    <span class="field-text__help-text">На этот email будет отправлена схема сразу после оплаты</span>
+                  </span>
+                </label>
+                <label class="payment-info__field field-select">
+                  <div class="field-select__name">Страна</div>
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" id name>
+                      <option>Значение 1</option>
+                      <option>Значение 2</option>
+                      <option>Значение 3</option>
+                    </select>
                   </div>
-                </div>
+                </label>
+                <label class="payment-info__field field-select">
+                  <div class="field-select__name">Город</div>
+                  <div class="field-select__select-wrap">
+                    <select class="field-select__select" id name>
+                      <option>Значение 1</option>
+                      <option>Значение 2</option>
+                      <option>Значение 3</option>
+                    </select>
+                  </div>
+                </label>
               </div>
-              <div class="popular__item">
-                <div class="product-card">
-                  <div class="product-card__inner">
-                    <div class="product-card__labels">
-                      <div class="label label--new">new</div>
-                      <div class="label label--hit">hit</div>
-                      <div class="label label--sale">sale</div>
+            </div>
+            <div class="order__item">
+              <div class="payment-method">
+                <div class="payment-method__head">Способы оплаты</div>
+                <div class="payment-method__fields">
+                  <label class="payment-method__field">
+                    <input class="payment-method__input" type="radio" id name="payment-radio" checked>
+                    <div class="payment-method__box">
+                      <img class="payment-method__box-logo" src="img/payment-logo-paypal.png" alt>
+                      <div class="payment-method__box-text">Подойдет для тех, кто живет за границей</div>
                     </div>
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-img.jpg" alt>
+                  </label>
+                  <label class="payment-method__field">
+                    <input class="payment-method__input" type="radio" id name="payment-radio">
+                    <div class="payment-method__box">
+                      <img class="payment-method__box-logo" src="img/payment-logo-yad.png" alt>
+                      <div class="payment-method__box-text">Подойдет для тех, кто живет на территории России</div>
                     </div>
-                    <div class="product-card__body">
-                      <div class="product-card__title"><a href="#">133-20 Primareva (Весна)</a></div>
-                    </div>
-                    <div class="product-card__price">
-                      <span class="price-amount price-amount--old">3500 руб.</span>
-                      <span class="price-amount">3000 руб.</span>
-                      <div class="add-favorites"></div>
-                    </div>
-                    <div class="product-card__action">
-                      <a href="#" class="btn btn--red">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="popular__item">
-                <div class="product-card">
-                  <div class="product-card__inner">
-                    <div class="product-card__labels">
-                      <div class="label label--new">new</div>
-                      <div class="label label--hit">hit</div>
-                      <div class="label label--sale">sale</div>
-                    </div>
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-img.jpg" alt>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__title"><a href="#">133-20 Primareva (Весна)</a></div>
-                    </div>
-                    <div class="product-card__price">
-                      <span class="price-amount price-amount--old">3500 руб.</span>
-                      <span class="price-amount">3000 руб.</span>
-                      <div class="add-favorites"></div>
-                    </div>
-                    <div class="product-card__action">
-                      <a href="#" class="btn btn--red">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="popular__item">
-                <div class="product-card">
-                  <div class="product-card__inner">
-                    <div class="product-card__labels">
-                      <div class="label label--new">new</div>
-                      <div class="label label--hit">hit</div>
-                      <div class="label label--sale">sale</div>
-                    </div>
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-img.jpg" alt>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__title"><a href="#">133-20 Primareva (Весна)</a></div>
-                    </div>
-                    <div class="product-card__price">
-                      <span class="price-amount price-amount--old">3500 руб.</span>
-                      <span class="price-amount">3000 руб.</span>
-                      <div class="add-favorites"></div>
-                    </div>
-                    <div class="product-card__action">
-                      <a href="#" class="btn btn--red">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="popular__item">
-                <div class="product-card">
-                  <div class="product-card__inner">
-                    <div class="product-card__labels">
-                      <div class="label label--new">new</div>
-                      <div class="label label--hit">hit</div>
-                      <div class="label label--sale">sale</div>
-                    </div>
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-img.jpg" alt>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__title"><a href="#">133-20 Primareva (Весна)</a></div>
-                    </div>
-                    <div class="product-card__price">
-                      <span class="price-amount price-amount--old">3500 руб.</span>
-                      <span class="price-amount">3000 руб.</span>
-                      <div class="add-favorites"></div>
-                    </div>
-                    <div class="product-card__action">
-                      <a href="#" class="btn btn--red">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="popular__item">
-                <div class="product-card">
-                  <div class="product-card__inner">
-                    <div class="product-card__labels">
-                      <div class="label label--new">new</div>
-                      <div class="label label--hit">hit</div>
-                      <div class="label label--sale">sale</div>
-                    </div>
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-img.jpg" alt>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__title"><a href="#">133-20 Primareva (Весна)</a></div>
-                    </div>
-                    <div class="product-card__price">
-                      <span class="price-amount price-amount--old">3500 руб.</span>
-                      <span class="price-amount">3000 руб.</span>
-                      <div class="add-favorites"></div>
-                    </div>
-                    <div class="product-card__action">
-                      <a href="#" class="btn btn--red">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="popular__item">
-                <div class="product-card">
-                  <div class="product-card__inner">
-                    <div class="product-card__labels">
-                      <div class="label label--new">new</div>
-                      <div class="label label--hit">hit</div>
-                      <div class="label label--sale">sale</div>
-                    </div>
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-img.jpg" alt>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__title"><a href="#">133-20 Primareva (Весна)</a></div>
-                    </div>
-                    <div class="product-card__price">
-                      <span class="price-amount price-amount--old">3500 руб.</span>
-                      <span class="price-amount">3000 руб.</span>
-                      <div class="add-favorites"></div>
-                    </div>
-                    <div class="product-card__action">
-                      <a href="#" class="btn btn--red">В корзину</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="popular__item">
-                <div class="product-card">
-                  <div class="product-card__inner">
-                    <div class="product-card__labels">
-                      <div class="label label--new">new</div>
-                      <div class="label label--hit">hit</div>
-                      <div class="label label--sale">sale</div>
-                    </div>
-                    <div class="product-card__img-wrap">
-                      <img src="img/product-img.jpg" alt>
-                    </div>
-                    <div class="product-card__body">
-                      <div class="product-card__title"><a href="#">133-20 Primareva (Весна)</a></div>
-                    </div>
-                    <div class="product-card__price">
-                      <span class="price-amount price-amount--old">3500 руб.</span>
-                      <span class="price-amount">3000 руб.</span>
-                      <div class="add-favorites"></div>
-                    </div>
-                    <div class="product-card__action">
-                      <a href="#" class="btn btn--red">В корзину</a>
-                    </div>
-                  </div>
+                  </label>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="reviews section pattern-section">
-          <div class="container">
-            <h2 class="section__title-decor">Отзывы</h2>
-            <div class="reviews__wrap">
-              <div class="reviews__carousel">
-                <div class="reviews__item">
-                  <div class="reviews__header">
-                    <div class="reviews__date">28.11.2020</div>
-                    <div class="reviews__title">Светлана николаевна</div>
-                  </div>
-                  <div class="reviews__body">
-                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-                  </div>
-                  <div class="reviews__footer">
-                    <a href="#" class="reviews__photo-link">
-                      <span class="pl-text">Схема: 133-20 Primavera (Весна)</span>
-                      <span class="pl-btn">Открыть фото</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="reviews__item">
-                  <div class="reviews__header">
-                    <div class="reviews__date">28.11.2020</div>
-                    <div class="reviews__title">Светлана николаевна</div>
-                  </div>
-                  <div class="reviews__body">
-                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-                  </div>
-                  <div class="reviews__footer">
-                    <a href="#" class="reviews__photo-link">
-                      <span class="pl-text">Схема: 133-20 Primavera (Весна)</span>
-                      <span class="pl-btn">Открыть фото</span>
-                    </a>
-                  </div>
-                </div>
-                <div class="reviews__item">
-                  <div class="reviews__header">
-                    <div class="reviews__date">28.11.2020</div>
-                    <div class="reviews__title">Светлана николаевна</div>
-                  </div>
-                  <div class="reviews__body">
-                    <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</p>
-                  </div>
-                  <div class="reviews__footer">
-                    <a href="#" class="reviews__photo-link">
-                      <span class="pl-text">Схема: 133-20 Primavera (Весна)</span>
-                      <span class="pl-btn">Открыть фото</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="reviews__action">
-                <a href="#" class="btn btn--red">Написать отзыв</a>
-              </div>
+            <div class="order__action">
+              <a href="#" class="btn btn--red">Оплатить</a>
             </div>
           </div>
-        </section>
-        <section class="about section">
-          <div class="container">
-            <h2 class="section__title-decor">Следуй за кроликом, вышей свою мечту!</h2>
-            <div class="about__wrap">
-              <div class="about__box">
-                <div class="about__img-wrap">
-                  <img class="thumb" src="img/about-img-01.jpg" alt>
-                </div>
-                <div class="about__text-wrap">
-                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
-                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
-                </div>
-              </div>
-              <div class="about__box">
-                <div class="about__text-wrap">
-                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
-                  <p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
-                </div>
-                <div class="about__img-wrap">
-                  <img class="thumb" src="img/about-img-02.jpg" alt>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="gallery section pattern-section">
-          <div class="container">
-            <h2 class="section__title-decor">Работы наших покупателей</h2>
-            <div class="gallery__wrap">
-              <div class="gallery__carousel">
-                <div class="gallery__item">
-                  <a class="thumb" href="#"><img src="img/gallery-img-prev-01.jpg" alt></a>
-                </div>
-                <div class="gallery__item">
-                  <a class="thumb" href="#"><img src="img/gallery-img-prev-02.jpg" alt></a>
-                </div>
-                <div class="gallery__item">
-                  <a class="thumb" href="#"><img src="img/gallery-img-prev-03.jpg" alt></a>
-                </div>
-                <div class="gallery__item">
-                  <a class="thumb" href="#"><img src="img/gallery-img-prev-01.jpg" alt></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        </div>
       </main>
     </div>
     <div class="page__footer-wrapper">
