@@ -6,28 +6,39 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  width: 46px;
-  height: 46px;
-  background-color: #F6F2F0;
-  border-radius: 50%;
-  position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 
-  &:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart.svg');
+  &__icon {
+    width: 46px;
+    height: 46px;
+    background-color: #F6F2F0;
+    border-radius: 50%;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+      background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart.svg');
+    }
+  }
+
+  &__text {
+    padding-left: 20px;
   }
 
   &.added {
-    &:before {
-      background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart_fill.svg');
+    &__icon {
+      &:before {
+        background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart_fill.svg');
+      }
     }
   }
 }

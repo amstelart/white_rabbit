@@ -26,18 +26,121 @@
                 </div>
                 <div class="filters__part">
                   <div class="filters__part-head">Размер</div>
+                  <div class="field-checkbox">
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                        <span class="field-checkbox__name-text">300x300</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">150x300</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">200x300</span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
                 <div class="filters__part">
                   <div class="filters__part-head">Сложность</div>
+                  <label class="field-select">
+                    <div class="field-select__select-wrap">
+                      <select class="field-select__select" id="" name="">
+                        <option>1+</option>
+                        <option>2+</option>
+                        <option>3+</option>
+                        <option>4+</option>
+                        <option>5+</option>
+                      </select>
+                    </div>
+                  </label>
                 </div>
                 <div class="filters__part">
                   <div class="filters__part-head">Количество цветов</div>
+                  <div class="field-checkbox">
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                        <span class="field-checkbox__name-text">50x100</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">100x150</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">150x200</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">200x250</span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
                 <div class="filters__part">
                   <div class="filters__part-head">Количество цветов</div>
+                  <div class="field-checkbox">
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="" checked>
+                        <span class="field-checkbox__name-text">1 звезда</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">2 звезды</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">3 звезды</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">4 звезды</span>
+                      </label>
+                    </div>
+                    <div class="field-checkbox__input-wrap">
+                      <label class="field-checkbox__name">
+                        <input class="field-checkbox__input" type="checkbox" id="" name="">
+                        <span class="field-checkbox__name-text">5 звезд</span>
+                      </label>
+                    </div>
+                  </div>
                 </div>
                 <div class="filters__part">
                   <div class="filters__part-head">Цена</div>
+                  <div class="field-range">
+                    <div class="field-range__input-group">
+                      <div class="field-range__input-wrap">
+                        <input type="text" class="js-input-from field-range__input" value="0" />
+                      </div>
+                      <div class="field-range__separator"></div>
+                      <div class="field-range__input-wrap">
+                        <input type="text" class="js-input-to field-range__input" value="0" />
+                      </div>
+                    </div>
+                    <div class="field-range__slider">
+                      <input type="text" class="js-range-slider" value="" />
+                    </div>
+                  </div>
                 </div>
                 <div class="filters__action">
                   <div class="filters__action-item">
@@ -55,7 +158,29 @@
                 <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Схемы</a></li>
                 <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Пейзажи</a></li>
               </ul>
-              <h1>Пейзажи</h1>
+              <h1 class="catalog__title">Пейзажи</h1>
+              <!-- <div class="catalog__sorting">
+                <div class="sort-item">
+                  <label for="" class="sort-item__title">Сортировать по:</label>
+                  <div class="dropdown">
+                    <button class="dropdown__toggler  btn btn--sm" id="dropdown-demo-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Выпадает список вверх
+                    </button>
+                    <ul class="dropdown__menu  dropdown__menu--down  menu" aria-labelledby="dropdown-demo-4">
+                      <li class="menu__item"><a class="menu__link" href="#">Пункт списка (выпадает <code>ul</code>)</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sort-item">
+                  <label for="" class="sort-item__title">Показывать по:</label>
+                  <select class="sort-item styler" name="" id="">
+                    <option value="">8 схем</option>
+                    <option value="">8 схем</option>
+                    <option value="">8 схем</option>
+                    <option value="">8 схем</option>
+                  </select>
+                </div>
+              </div> -->
               <div class="catalog__list">
                 <div class="catalog__item">
                   @@include('blocks/product-card/product-card.html')
@@ -75,6 +200,14 @@
                 <div class="catalog__item">
                   @@include('blocks/product-card/product-card.html')
                 </div>
+              </div>
+              <div class="pagination">
+                <a href="" class="pagination__item">1</a>
+                <a href="" class="pagination__item">2</a>
+                <a href="" class="pagination__item  pagination__item--active">3</a>
+                <a href="" class="pagination__item">4</a>
+                <a href="" class="pagination__item">5</a>
+                <a href="" class="pagination__item">6</a>
               </div>
             </div>
           </div>

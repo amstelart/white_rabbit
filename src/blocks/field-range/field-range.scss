@@ -10,107 +10,96 @@ $line-height:                 1.375em !default;
 $border-radius:               3px !default;
 
 .field-range {
-
   $block-name:                &; // #{$block-name}__element
 
   display: block;
   margin-bottom: ($line-height / 2);
 
   &__name {
-    @include field-name;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    @media (min-width: $screen-xxl) {
+      font-size: 25px;
+      margin-bottom: 24px;
+    }
   }
-
+  &__input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
   &__input-wrap {
     position: relative;
   }
-
+  &__separator {
+    width: 5px;
+    height: 2px;
+    background: #000;
+    margin: 5px;
+  }
   &__input {
-    align-self: center;
-    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
     width: 100%;
-    height: 2em;
-    border-radius: 0.25rem;
-    border: 0;
-    background: none;
-    font-size: inherit;
-    cursor: pointer;
-    appearance: none;
-
-    &::-webkit-slider-runnable-track,
-    &::-webkit-slider-thumb {
-      -webkit-appearance: none; // stylelint-disable-line  property-no-vendor-prefix
-    }
+    // height: 2.125em;
+    padding: 0.7em 1em;
+    margin: 0;
+    line-height: $line-height;
+    font-size: 14px;
+    font-family: inherit;
+    background-color: #fff;
+    border: 1px solid #E9E4E1;
+    border-radius: 0;
+    appearance: textfield;
 
     &:focus {
       @include field-focus;
     }
 
-
-
-    // Фоновая линия ползунка
-
-    // Да, да, и это — локальная примесь.
-    @mixin field-range-runnable-track {
-      box-sizing: border-box;
-      width: 100%;
-      height: 0.75em;
-      border-radius: $border-radius;
-      background: #fff;
-      border: 1px solid $border-color;
+    &[disabled],
+    &[readonly] {
+      cursor: default;
+      background-color: $gray-lighter;
     }
 
-    // Увы, тут похожие наборы свойств приходится писать порознь.
-    &::-webkit-slider-runnable-track {
-      @include field-range-runnable-track; // локальная примесь!
+    &[type='number']::-webkit-inner-spin-button,
+    &[type='number']::-webkit-outer-spin-button {
+      // height: auto;
     }
 
-    &::-moz-range-track {
-      @include field-range-runnable-track; // локальная примесь!
-    }
-
-    &::-ms-track {
-      @include field-range-runnable-track; // локальная примесь!
-      color: transparent;
-    }
-
-
-    // Смещающийся элемент ползунка
-
-    // Да, да, и это — локальная примесь.
-    @mixin field-range-slider-thumb {
-      box-sizing: border-box;
-      padding: 0;
-      width: 2em;
-      height: 2em;
-      border-radius: 1em;
-      box-shadow: none;
-      cursor: ew-resize;
-      background: $gray-lightest;
-      border: 1px solid $border-color;
-    }
-
-    &::-webkit-slider-thumb {
-      margin-top: -0.68em;
-      @include field-range-slider-thumb; // локальная примесь!
-    }
-
-    &::-moz-range-thumb {
-      @include field-range-slider-thumb; // локальная примесь!
-    }
-
-    &::-ms-thumb {
-      @include field-range-slider-thumb; // локальная примесь!
-    }
-
-    &::-ms-fill-lower,
-    &::-ms-tooltip {
-      display: none;
+    &::placeholder {
+      color: $text-color--muted;
+      opacity: 1;
     }
   }
 
-  &__help-text {
-    @include field-help-text;
-    padding-top: 0;
+  &__slider {
+    .irs--round {
+      height: 26px;
+    }
+    .irs--round .irs-line {
+      background: #E0D7D4;
+      border-radius: 3px;
+      top: 13px;
+    }
+    .irs--round .irs-handle {
+      border-color: #fff;
+      top: 2px;
+      box-shadow: 0px 5px 10px rgba(61, 51, 45, 0.13);
+      cursor: pointer;
+    }
+    .irs--round .irs-bar {
+      background-color: #CE3434;
+      top: 13px;
+    }
+    .irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single {
+      background-color: $color-main;
+      color: #000;
+    }
+    .irs--round .irs-from:before, .irs--round .irs-to:before, .irs--round .irs-single:before {
+      border-top-color: $color-main;
+    }
   }
 }
 

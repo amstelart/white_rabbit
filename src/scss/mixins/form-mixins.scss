@@ -16,10 +16,10 @@
 
 @mixin field-focus {
   $color-main:                hsl(208, 98%, 43%) !default;
-  $opacity:                   0.7 !default;
+  // $opacity:                   0.7 !default;
 
   outline: 0;
-  box-shadow: 0 0 0 2px rgba($color-main, $opacity);
+  // box-shadow: 0 0 0 2px rgba($color-main, $opacity);
 }
 
 

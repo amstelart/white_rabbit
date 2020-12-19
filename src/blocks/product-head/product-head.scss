@@ -1,0 +1,30 @@
+// В этом файле должны быть стили для БЭМ-блока product-head, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.product-head {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding-bottom: 15px;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 36px;
+    margin-right: 20px;
+    margin-bottom: 12px;
+  }
+  &__rating {
+    margin-bottom: 12px;
+  }
+  &__add-favorites {
+    margin-left: auto;
+    margin-bottom: 12px;
+  }
+}

@@ -6,11 +6,13 @@
 
   $block-name:                &; // #{$block-name}__element
 
-  background: #FFFFFF;
-  border: 1px solid #E9E3E1;
-  padding: 20px;
-  height: 100%;
-  position: relative;
+  &__wrap {
+    height: 100%;
+    position: relative;
+    padding: 20px 0;
+    background: #FFFFFF;
+    border: 1px solid #E9E3E1;
+  }
 
   &__labels {
     position: absolute;
@@ -18,9 +20,37 @@
     left: 10px;
     display: flex;
     flex-direction: column;
+    z-index: 1;
 
     .label {
       margin-bottom: 4px;
     }
+  }
+
+  padding: 30px 35px 0 35px;
+  margin-bottom: 30px;
+
+  .slick-slide {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.product-carousel-nav {
+  .slick-slide {
+    border: 5px solid #fff;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.slick-current {
+      border-color: #F6F2F0;
+    }
+  }
+  img {
+    padding: 10px 0;
   }
 }

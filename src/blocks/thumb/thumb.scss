@@ -30,5 +30,17 @@ $transition-time:             0.3s !default;
     box-shadow: none;
     border: none;
     display: block;
+    position: relative;
+
+    &:before {
+      content: "";
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: svg-load('../blocks/thumb/bg-img/el_play-alt.svg');
+    }
   }
 }

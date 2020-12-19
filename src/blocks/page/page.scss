@@ -62,6 +62,7 @@ body {
 // We love Safari
 input[type='search'] {
   -webkit-appearance: textfield; // stylelint-disable-line  property-no-vendor-prefix
+  outline: none;
 }
 
 // Avoid 300ms click delay on touch devices that support the `touch-action` CSS property.
@@ -103,9 +104,11 @@ img {
     // @include row();
   }
 
-  // &__title {
-  //   @include col();
-  // }
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    margin-top: 0;
+  }
 
   // &__breadcrumbs {
   //   @include col();

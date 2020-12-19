@@ -86,13 +86,16 @@
     "product-carousel": [],
     "reviews-form": [],
     "reviews-list": [],
-    "reviews-card": []
+    "reviews-card": [],
+    "price-amount": [],
+    "product-head": [],
+    "star-rating-svg": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
-    "../../node_modules/nouislider/distribute/nouislider.css"
+    "../../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -106,9 +109,10 @@
     "./node_modules/svg4everybody/dist/svg4everybody.js",
     "./node_modules/ismobilejs/isMobile.min.js",
     "./node_modules/slick-carousel/slick/slick.min.js",
+    "./node_modules/star-rating-svg/dist/jquery.star-rating-svg.min.js",
     "./node_modules/jquery-form-styler/dist/jquery.formstyler.min.js",
     "./node_modules/swipejs/build/swipe.min.js",
-    "./node_modules/nouislider/distribute/nouislider.js",
+    "./node_modules/ion-rangeslider/js/ion.rangeSlider.min.js",
     "./node_modules/object-fit-images/dist/ofi.js"
   ],
   "addJsAfter": [

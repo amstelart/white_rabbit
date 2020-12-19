@@ -1,0 +1,22 @@
+// В этом файле должны быть стили для БЭМ-блока price-amount, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.price-amount {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  color: #212121;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.6;
+
+  &--old {
+    color: #A5A5A5;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

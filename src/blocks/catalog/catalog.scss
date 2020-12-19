@@ -16,10 +16,33 @@
   &__showcase {
     @include col();
     @include col(lg, 9);
+    margin-bottom: 40px;
+  }
+
+  &__sorting {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 35px;
+
+    .sort-item {
+      margin-right: 15px;
+
+      &__title {
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
   }
 
   &__list {
     @include row;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 36px;
+    margin-top: 0;
   }
 
   &__item {

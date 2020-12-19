@@ -25,7 +25,6 @@ $border-radius: 3px !default;
   user-select: none;
   text-align: center;
   font-size: 1em;
-  font-weight: 700;
   text-transform: uppercase;
   font-family: inherit;
   line-height: $line-height;
@@ -36,6 +35,7 @@ $border-radius: 3px !default;
   border-radius: 90px;
   background-color: $gray-lightest;
   background-image: none;
+  font-weight: 700;
   cursor: pointer;
 
   &:hover,
@@ -88,6 +88,24 @@ $border-radius: 3px !default;
     &:focus {
       color: #fff;
       background-color: #EF5454;
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: #EF5454;
+    }
+  }
+
+  &--outline-red {
+    border: 2px solid #CE3434;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: #EF5454;
+      border-color: #EF5454;
     }
 
     &--disabled,
