@@ -47,6 +47,7 @@
 
   &__item {
     @include col();
+    @include col(md, 6);
     @include col(lg, 4);
   }
 }

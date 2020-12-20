@@ -7,14 +7,14 @@
   <meta name="description" content="">
   @@include('_include/page_head.html')
   <style>
-    ul {
+    .sitemap-list {
       list-style: none;
       font-size: 16px;
     }
-    ul li {
+    .sitemap-list li {
       margin-bottom: 8px;
     }
-    ul a {
+    .sitemap-list a {
       text-decoration: none;
       color: #000;
     }
@@ -31,7 +31,8 @@
 
       <main class="main" role="main">
         <div class="container">
-          <ul>
+          <b>Страницы</b>
+          <ul class="sitemap-list">
             <li><a href="index.html" target="_blank">Главная</a></li>
             <li><a href="catalog.html" target="_blank">Каталог</a></li>
             <li><a href="product.html" target="_blank">Товар</a></li>
@@ -40,6 +41,11 @@
             <li><a href="video.html" target="_blank">Видео</a></li>
             <li><a href="reviews.html" target="_blank">Отзывы</a></li>
           </ul>
+          <b>Модальные окна</b>
+          <p><a href="#" data-toggle="modal" data-target="#modal-review">Добавить отзыв</a></p>
+          <p><a href="#" data-toggle="modal" data-target="#modal-call">Обратный звонок</a></p>
+          <p><a href="#" data-toggle="modal" data-target="#modal-review-notify">Отзыв успешно добавлен</a></p>
+          <p><a href="#" data-toggle="modal" data-target="#modal-call-notify">Товар добавлен в корзину</a></p>
         </div>
       </main>
 
@@ -51,6 +57,7 @@
 
   </div>
 
+  @@include('blocks/modal/modal.html')
   @@include('_include/page_bottom.html')
 </body>
 </html>

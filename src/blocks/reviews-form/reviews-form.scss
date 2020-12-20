@@ -19,14 +19,26 @@
   &__action {
     margin-top: 35px;
     display: flex;
+    flex-wrap: wrap;
 
     .btn {
-      margin-right: 25px;
+      margin-bottom: 15px;
+      width: 100%;
+
+      @media (min-width: $screen-md) {
+        margin-right: 25px;
+        width: auto;
+      }
     }
   }
 
   &__field-file {
     margin-bottom: 0;
+    width: 100%;
+
+    @media (min-width: $screen-md) {
+      width: auto;
+    }
 
     .field-file__name-text {
       background: transparent;
@@ -35,6 +47,8 @@
       padding: 0 20px 0 0;
 
       &:before {
+        width: 100%;
+        text-align: center;
         margin: 0;
         text-decoration: underline;
         padding: 15px 0 15px 40px;

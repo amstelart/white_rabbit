@@ -9,6 +9,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
+  position: relative;
 
   &__view {
     img {
@@ -32,4 +33,9 @@
     }
   }
   &__price {}
+  &__close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
 }

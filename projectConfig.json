@@ -89,13 +89,15 @@
     "reviews-card": [],
     "price-amount": [],
     "product-head": [],
-    "star-rating-svg": []
+    "star-rating-svg": [],
+    "field-rating": []
   },
   "addCssBefore": [
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "./src/scss/functions.scss",
-    "../../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css"
+    "../../node_modules/ion-rangeslider/css/ion.rangeSlider.min.css",
+    "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css"
   ],
   "addCssAfter": [
     "./src/scss/print.scss"
@@ -111,6 +113,7 @@
     "./node_modules/slick-carousel/slick/slick.min.js",
     "./node_modules/star-rating-svg/dist/jquery.star-rating-svg.min.js",
     "./node_modules/jquery-form-styler/dist/jquery.formstyler.min.js",
+    "./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
     "./node_modules/swipejs/build/swipe.min.js",
     "./node_modules/ion-rangeslider/js/ion.rangeSlider.min.js",
     "./node_modules/object-fit-images/dist/ofi.js"

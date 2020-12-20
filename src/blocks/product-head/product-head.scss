@@ -10,7 +10,11 @@
 
   &__inner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    @media (min-width: $screen-lg) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__title {
@@ -19,6 +23,11 @@
     font-size: 36px;
     margin-right: 20px;
     margin-bottom: 12px;
+    flex-basis: 100%;
+
+    @media (min-width: $screen-lg) {
+      flex-basis: auto;
+    }
   }
   &__rating {
     margin-bottom: 12px;

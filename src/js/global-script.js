@@ -1,7 +1,26 @@
 // Если на проекте jQuery
 $(document).ready(function () {
-  // code
+  /* toggle */
+  $('.toggle').click(function () {
+    var toggle_id = $('#' + $(this).attr("data-target"));
+    $(this).toggleClass("active");
+    $(toggle_id).toggleClass("active");
+  });
   // star-rating
+  $(".set-rating").starRating({
+    readOnly: false,
+    starSize: 22,
+    useGradient: false,
+    starShape: 	'rounded',
+    activeColor: '#FFB800',
+    emptyColor: '#E9E3E1',
+    onHover: function(currentIndex, currentRating, $el){
+      $('.live-rating').text(currentIndex);
+    },
+    onLeave: function(currentIndex, currentRating, $el){
+      $('.live-rating').text(currentRating);
+    }
+  });
   $(".product-rating").starRating({
     readOnly: true,
     starSize: 22,
