@@ -6,11 +6,18 @@
 
   $block-name:                &; // #{$block-name}__element
 
+
+  @media (max-width: ($screen-lg - 1)) {
+    border-bottom: 2px solid #ddd4cf;
+    background: #F6F2F0;
+  }
+
   &__inner {
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
   }
+
   &__logo {
     flex-shrink: 0;
 
@@ -41,8 +48,8 @@
     text-align: center;
     position: relative;
     font-family: $font-family--headings;
-    font-size: 22px;
-    line-height: 1.4;
+    font-size: 24px;
+    line-height: 1.2;
     padding: 10px 50px;
 
     @media (min-width: $screen-xl) {
@@ -95,12 +102,12 @@
     align-items: center;
     margin-bottom: 20px;
 
-    @media (max-width: $screen-md) {
+    @media (max-width: ($screen-lg - 1)) {
       display: none;
     }
   }
   &__email {
-    font-size: 17px;
+    font-size: 15px;
     line-height: 20px;
     padding-left: 30px;
     display: inline-block;
@@ -109,6 +116,10 @@
     color: $text-color;
     text-decoration: none;
     margin-right: 20px;
+
+    @media (min-width: $screen-xl) {
+      font-size: 17px;
+    }
 
     .icon {
       position: absolute;

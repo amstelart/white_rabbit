@@ -78,11 +78,6 @@ textarea {
   touch-action: manipulation;
 }
 
-a,
-button {
-  transition: $transition-time;
-}
-
 // We love EDGE! This is a browser!
 svg {
 
@@ -114,7 +109,7 @@ img {
     font-size: 26px;
     margin-top: 0;
 
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-xl) {
       font-size: 36px;
     }
   }
@@ -127,7 +122,7 @@ img {
 .section {
   padding: 40px 0;
 
-  @media (min-width: $screen-lg) {
+  @media (min-width: $screen-xl) {
     padding: 80px 0;
   }
 
@@ -140,7 +135,7 @@ img {
     margin-bottom: 30px;
     margin-top: 0;
 
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-xl) {
       font-size: 36px;
       line-height: 41px;
       margin-bottom: 50px;

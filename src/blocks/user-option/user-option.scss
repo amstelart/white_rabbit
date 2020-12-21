@@ -6,10 +6,13 @@
 
   $block-name: &; // #{$block-name}__element
 
-  margin-left: 56px;
+  margin-left: 15px;
 
-  @media (max-width: $screen-md) {
+  @media (min-width: $screen-lg) {
     margin-left: 30px;
+  }
+  @media (min-width: $screen-xl) {
+    margin-left: 56px;
   }
 
   &__wrap {
@@ -22,6 +25,10 @@
     width: 40px;
     height: 40px;
     margin-right: 20px;
+
+    @media (max-width: ($screen-lg - 1)) {
+      margin-right: 8px;
+    }
 
     &:before {
       content: "";
@@ -58,21 +65,29 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    @media (max-width: $screen-md) {
+    @media (max-width: ($screen-lg - 1)) {
       display: none;
     }
   }
 
   &__name {
-    font-size: 17px;
+    font-size: 16px;
     line-height: 19px;
     color: #212121;
+
+    @media (min-width: $screen-xl) {
+      font-size: 17px;
+    }
   }
 
   &__val {
-    font-size: 15px;
+    font-size: 12px;
     line-height: 17px;
     color: #B6B6B6;
+
+    @media (min-width: $screen-xl) {
+      font-size: 15px;
+    }
   }
 
   &--favorites {
