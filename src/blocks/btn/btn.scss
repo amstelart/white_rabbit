@@ -115,6 +115,24 @@ $border-radius: 3px !default;
     }
   }
 
+  &--gray {
+    background-color: #B5AAA3;
+    color: #fff;
+    border: none;
+
+    &:hover,
+    &:focus {
+      color: #fff;
+      background-color: lighten(#B5AAA3, 5%);
+    }
+
+    &--disabled,
+    &:disabled {
+      color: #fff;
+      background-color: lighten(#B5AAA3, 5%);
+    }
+  }
+
   // &--main {
   //   color: #fff;
   //   background-color: $color-main;

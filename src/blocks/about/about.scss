@@ -10,23 +10,40 @@
 
   &__box {
     @include row;
-    margin-bottom: 30px;
+    @media (min-width: $screen-lg) {
+      margin-bottom: 30px;
+    }
   }
 
   &__img-wrap {
     @include col();
     @include col(lg, 5);
     text-align: center;
+
+    @media (max-width: ($screen-lg - 1)) {
+      img {
+        width: 100%;
+      }
+    }
   }
 
   &__text-wrap {
     @include col();
     @include col(lg, 7);
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 14px;
+    line-height: 1.6;
 
     p {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: $screen-lg) {
+      font-size: 16px;
+      line-height: 23px;
+
+      p {
+        margin-bottom: 30px;
+      }
     }
   }
 }

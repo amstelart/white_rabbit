@@ -11,7 +11,7 @@ $screen-lg:                   992px !default;
 $screen-xl:                   1200px !default;
 $screen-xxl:                  1800px !default;
 
-$menu-desktop-width:          $screen-xl !default;
+$menu-desktop-width:          $screen-lg;
 $toggler-part-height:         3px !default;
 $toggler-part-bg-color:       #000 !default;
 
@@ -70,18 +70,21 @@ $transition-time:             0.3s !default;
 
   &__link {
     display: block;
-    font-size: 14px;
+    font-size: 12px;
     padding: 1em 0.7em;
     text-decoration: none;
     text-transform: uppercase;
     color: $text-color;
     font-weight: 700;
-    // background-color: #fff;
+
+    @media (min-width: $screen-xl) {
+      font-size: 14px;
+    }
 
     &:hover,
     &:focus {
       text-decoration: none;
-      background-color: $gray-lightest;
+      color: #CE3434;
     }
 
     &--lvl-2 {

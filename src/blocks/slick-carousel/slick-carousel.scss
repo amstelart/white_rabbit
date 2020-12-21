@@ -184,8 +184,8 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-next {
   position: absolute;
   display: block;
-  height: 52px;
-  width: 52px;
+  height: 34px;
+  width: 34px;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
@@ -202,11 +202,15 @@ $slick-opacity-not-active: 0.25 !default;
   z-index: 1;
   border: none;
   outline: none;
+  transition: $transition-time;
 
-  &:hover,
+  @media (min-width: $screen-xl) {
+    height: 52px;
+    width: 52px;
+  }
+
   &:focus {
     outline: none;
-    background-color: #fff;
     color: transparent;
   }
 
@@ -220,9 +224,17 @@ $slick-opacity-not-active: 0.25 !default;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 12.5px;
-    height: 20px;
+    width: 12px;
+    height: 12px;
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: $transition-time;
+
+    @media (min-width: $screen-xl) {
+      width: 12.5px;
+      height: 20px;
+    }
   }
 }
 
@@ -239,7 +251,7 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   &:before {
-    background-image: svg-load('../blocks/slick-carousel/bg-img/slick-prev-icon.svg');
+    background-image: url('../img/slick-prev-icon.svg');
     background-position: center center;
 
     [dir="rtl"] & {
@@ -247,6 +259,14 @@ $slick-opacity-not-active: 0.25 !default;
     }
   }
 }
+
+.slick-prev:hover {
+  background-color: #CE3434;
+  &:before {
+    background-image: url('../img/slick-prev-icon-white.svg');
+  }
+}
+
 
 .slick-next {
   right: -75px;
@@ -261,11 +281,18 @@ $slick-opacity-not-active: 0.25 !default;
   }
 
   &:before {
-    background-image: svg-load('../blocks/slick-carousel/bg-img/slick-next-icon.svg');
+    background-image: url('../img/slick-next-icon.svg');
 
     [dir="rtl"] & {
       content: $slick-prev-character;
     }
+  }
+}
+
+.slick-next:hover {
+  background-color: #CE3434;
+  &:before {
+    background-image: url('../img/slick-next-icon-white.svg');
   }
 }
 

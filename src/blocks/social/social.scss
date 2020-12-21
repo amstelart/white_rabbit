@@ -19,15 +19,17 @@
   }
   &__link {
     display: block;
+    transition: $transition-time;
 
-    // &:hover {
+    &:hover {
 
-    //   #{$block-name}__icon {
-    //     fill: #CE3434;
-    //   }
-    // }
+      #{$block-name}__icon {
+        fill: #CE3434;
+      }
+    }
   }
   &__icon {
+    transition: $transition-time;
     fill: #B5AAA3;
   }
 }

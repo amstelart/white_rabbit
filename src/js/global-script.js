@@ -36,6 +36,7 @@ $(document).ready(function () {
   //     // make a server call here
   //   }
   // });
+
   // range-slider
   $(function () {
 
@@ -108,10 +109,11 @@ $(document).ready(function () {
     });
 
   });
-  // end range-slider
-  // $(function() {
-  //   $('.sort-item').styler();
-  // });
+
+  $('.main-carousel').slick({
+    dots: false,
+    arrows: true,
+  });
 
   $('.product-carousel').slick({
     slidesToShow: 1,
@@ -122,6 +124,7 @@ $(document).ready(function () {
     draggable: false,
     asNavFor: '.product-carousel-nav'
   });
+
   $('.product-carousel-nav').slick({
     slidesToShow: 5,
     slidesToScroll: 1,
@@ -133,19 +136,36 @@ $(document).ready(function () {
     focusOnSelect: true
   });
 
-  $('.main-carousel').slick({
-    dots: false,
-    arrows: false,
-  });
   $('.reviews__carousel').slick({
     dots: true,
     arrows: true,
   });
+
   $('.gallery__carousel').slick({
     dots: true,
     arrows: true,
+    slidesToScroll: 1,
     slidesToShow: 3,
-    slidesToScroll: 1
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          arrows: false,
+          // centerMode: true,
+          // centerPadding: '40px',
+          slidesToShow: 2
+        }
+      }
+    ]
   });
 });
 

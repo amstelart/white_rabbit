@@ -17,6 +17,7 @@
     border-radius: 50%;
     position: relative;
     flex-shrink: 0;
+    transition: $transition-time;
 
     &:before {
       content: "";
@@ -27,7 +28,18 @@
       width: 20px;
       height: 20px;
       display: inline-block;
-      background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart.svg');
+      background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart.svg' fill='#B5AAA3');
+      transition: $transition-time;
+    }
+  }
+
+  &:hover {
+    #{$block-name}__icon {
+      background-color: darken(#F6F2F0, 5%);
+
+      &:before {
+        background-image: svg-load('../blocks/add-favorites/bg-img/cil_heart.svg' fill='#CE3434');
+      }
     }
   }
 

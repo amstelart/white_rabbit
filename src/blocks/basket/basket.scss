@@ -10,13 +10,15 @@
 
   &__list {
     @include col();
-    @include col(lg, 9);
+    @include col(xl, 9);
+    @include col(lg, 8);
     margin-bottom: 25px;
   }
 
   &__sidebar {
     @include col();
-    @include col(lg, 3);
+    @include col(xl, 3);
+    @include col(lg, 4);
   }
 
   &__item {

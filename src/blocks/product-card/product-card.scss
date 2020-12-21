@@ -15,6 +15,7 @@
   &__inner {
 
   }
+
   &__labels {
     position: absolute;
     top: 15px;
@@ -29,6 +30,7 @@
   &__img-wrap {
     margin-bottom: 34px;
     text-align: center;
+    display: block;
   }
   &__body {}
 

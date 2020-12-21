@@ -19,7 +19,11 @@
   }
   &__logo {
     flex-shrink: 0;
-    margin-right: 84px;
+    margin-right: 40px;
+
+    @media (min-width: $screen-xl) {
+      margin-right: 84px;
+    }
 
     img {
       max-width: 70px;
@@ -71,6 +75,14 @@
   &__social {
     margin-left: 20px;
     margin-bottom: 8px;
+
+    .social__link {
+      &:hover {
+        .social__icon {
+          fill: #fff;
+        }
+      }
+    }
   }
 
   &__nav {
