@@ -44,7 +44,7 @@
 <meta name="msapplication-config" content="/img/browserconfig.xml">
 <meta name="theme-color" content="#ffffff"></head>
 <body>
-  <div class="page__inner">
+  <div class="page__inner c-offcanvas-content-wrap">
     <div class="page__content">
       <header class="page-header" role="banner">
         <div class="container">
@@ -230,8 +230,8 @@
       <main class="main" role="main">
         <div class="container">
           <div class="catalog">
-            <div class="catalog__sidebar">
-              <div class="filters">
+            <div class="catalog__sidebar" data-set="bs">
+              <form class="filters js-append-around">
                 <div class="filters__head">
                   Подобрать схему
                 </div>
@@ -361,7 +361,7 @@
                     <a href="#" class="btn btn--sm btn--gray">Сбросить</a>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
             <div class="catalog__showcase">
               <ul class="breadcrumbs">
@@ -370,28 +370,42 @@
                 <li class="breadcrumbs__item"><a href class="breadcrumbs__link">Пейзажи</a></li>
               </ul>
               <h1 class="catalog__title">Пейзажи</h1>
-              <!-- <div class="catalog__sorting">
-                <div class="sort-item">
-                  <label for="" class="sort-item__title">Сортировать по:</label>
-                  <div class="dropdown">
-                    <button class="dropdown__toggler  btn btn--sm" id="dropdown-demo-4" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Выпадает список вверх
-                    </button>
-                    <ul class="dropdown__menu  dropdown__menu--down  menu" aria-labelledby="dropdown-demo-4">
-                      <li class="menu__item"><a class="menu__link" href="#">Пункт списка (выпадает <code>ul</code>)</a></li>
-                    </ul>
+              <div class="catalog__options">
+                <button class="btn btn--sm btn--red js-offcanvas-toggler" data-button-options="{"wrapText":false}" aria-label="Toggle navigation">
+                  <svg fill="#fff" enable-background="new 0 0 512 512" height="512" viewbox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m187.304 252.717c8.045 11.642 5.64 1.941 5.64 233.997 0 20.766 23.692 32.651 40.39 20.23 71.353-53.797 85.609-58.456 85.609-83.619 0-169.104-1.971-159.594 5.64-170.608l115.869-157.718h-369.016z"/><path d="m484.221 12.86c-4.14-7.93-12.26-12.86-21.199-12.86h-414.156c-19.305 0-30.664 21.777-19.59 37.6.091.152-1.257-1.693 20.12 27.4h413.095c18.217-24.793 30.394-35.505 21.73-52.14z"/></g></svg>
+                  Фильтры
+                </button>
+                <div class="catalog-sort">
+                  <div class="catalog-sort__item">
+                    <label class="field-select">
+                      <div class="field-select__name">Сортировать по:</div>
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id name>
+                          <option>От дешевых к дорогим</option>
+                          <option>От дорогим к дешевым</option>
+                          <option>Популярные</option>
+                          <option>Новинки</option>
+                          <option>Акционные</option>
+                          <option>По рейтингу</option>
+                        </select>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="catalog-sort__item lg-none">
+                    <label class="field-select">
+                      <div class="field-select__name">Показывать по:</div>
+                      <div class="field-select__select-wrap">
+                        <select class="field-select__select" id name>
+                          <option>6 схем</option>
+                          <option>8 схем</option>
+                          <option>16 схем</option>
+                          <option>24 схемы</option>
+                        </select>
+                      </div>
+                    </label>
                   </div>
                 </div>
-                <div class="sort-item">
-                  <label for="" class="sort-item__title">Показывать по:</label>
-                  <select class="sort-item styler" name="" id="">
-                    <option value="">8 схем</option>
-                    <option value="">8 схем</option>
-                    <option value="">8 схем</option>
-                    <option value="">8 схем</option>
-                  </select>
-                </div>
-              </div> -->
+              </div>
               <div class="catalog__list">
                 <div class="catalog__item">
                   <div class="product-card">
@@ -712,6 +726,13 @@
       </footer>
     </div>
   </div>
+  <div class="c-offcanvas is-hidden" id="left" role="complementary">
+    <div class="c-offcanvas__head">
+      <button type="button" class="btn btn--sm btn--red js-offcanvas-close">Закрыть</button>
+    </div>
+    <!-- container for appendAround -->
+    <div class="offcanvas-nav d-block mobile-filters-wrap" data-set="bs"></div>
+  </div>
   <div id="modal-review" class="modal modal--form" tabindex="-1" role="dialog">
     <div class="modal__dialog" role="document">
       <form action class="modal__content">
@@ -816,5 +837,6 @@
     </div>
   </div>
   <script src="js/script.min.js"></script>
+  <script src="js/global-script.js"></script>
 </body>
 </html>
