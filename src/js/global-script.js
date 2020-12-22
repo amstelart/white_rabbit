@@ -1,10 +1,9 @@
 // Если на проекте jQuery
 $(document).ready(function () {
+
   /* toggle */
   $('.toggle').click(function () {
-    var toggle_id = $('#' + $(this).attr("data-target"));
     $(this).toggleClass("active");
-    $(toggle_id).toggleClass("active");
   });
   // star-rating
   $(".set-rating").starRating({
@@ -29,13 +28,6 @@ $(document).ready(function () {
     activeColor: '#FFB800',
     emptyColor: '#E9E3E1',
   });
-  // $(".product-rating").starRating({
-  //   starSize: 25,
-  //   setReadOnly: true,
-  //   callback: function (currentRating, $el) {
-  //     // make a server call here
-  //   }
-  // });
 
   // range-slider
   $(function () {
@@ -152,7 +144,6 @@ $(document).ready(function () {
         settings: {
           arrows: false,
           centerMode: true,
-          // centerPadding: '40px',
           slidesToShow: 1
         }
       },
@@ -160,8 +151,6 @@ $(document).ready(function () {
         breakpoint: 992,
         settings: {
           arrows: false,
-          // centerMode: true,
-          // centerPadding: '40px',
           slidesToShow: 2
         }
       }
@@ -186,3 +175,52 @@ $(document).ready(function () {
 // ready(function(){
 //   // code
 // });
+
+(function( $ ){
+  $.fn.appendAround = function(){
+    return this.each(function(){
+
+      var $self = $( this ),
+          att = "data-set",
+          $parent = $self.parent(),
+          parent = $parent[ 0 ],
+          attval = $parent.attr( att ),
+          $set = $( "["+ att +"='" + attval + "']" );
+
+      function isHidden( elem ){
+        return $(elem).css( "display" ) === "none";
+      }
+
+      function appendToVisibleContainer(){
+        if( isHidden( parent ) ){
+          var found = 0;
+          $set.each(function(){
+            if( !isHidden( this ) && !found ){
+              $self.appendTo( this );
+              found++;
+              parent = this;
+            }
+          });
+        }
+      }
+
+      appendToVisibleContainer();
+
+      $(window).bind( "resize", appendToVisibleContainer );
+
+    });
+  };
+}( jQuery ));
+
+$( function(){
+  $( document ).trigger( "enhance" );
+
+  $( '#left' ).offcanvas( {
+    modifiers: "left,overlay",
+    triggerButton: '.js-offcanvas-toggler',
+    onInit :  function() {
+      $(this).removeClass('is-hidden');
+    }
+  } );
+  $( ".js-append-around" ).appendAround();
+});

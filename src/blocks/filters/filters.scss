@@ -7,7 +7,11 @@
   $block-name: &; // #{$block-name}__element
 
   background: #F6F2F0;
-  padding: 30px 25px 25px 25px;
+  padding: 20px 15px 20px 15px;
+
+  @media (min-width: $screen-xl) {
+    padding: 30px 25px 25px 25px;
+  }
 
   &__head {
     font-size: 22px;
@@ -27,18 +31,44 @@
 
   &__action {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 24px;
+    margin-left: -5px;
+    margin-right: -5px;
   }
 
   &__action-item {
     flex-grow: 1;
-
-    &:first-child {
-      margin-right: 15px;
-    }
+    padding: 0 5px;
+    margin-bottom: 5px;
 
     .btn {
       width: 100%;
     }
+  }
+}
+
+.mobile-filters-wrap {
+  @media (min-width: $screen-lg) {
+    display: none !important;
+  }
+}
+
+.c-offcanvas--left {
+  background: #F6F2F0;
+  width: 17em;
+
+  .c-offcanvas__head {
+    padding: 15px 15px 0 15px;
+    .btn {
+      width: 100%;
+    }
+  }
+  .filters__head {
+    display: none;
+  }
+  .filters__part {
+    margin-top: 0;
+    margin-bottom: 15px;
   }
 }

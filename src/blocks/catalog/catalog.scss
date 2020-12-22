@@ -8,35 +8,41 @@
 
   @include row;
 
+  &__options {
+
+    .js-offcanvas-toggler {
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-bottom: 5px;
+      svg {
+        width: 13px;
+        height: 13px;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+    }
+    @media (min-width: $screen-lg) {
+      .js-offcanvas-toggler {
+        display: none;
+      }
+    }
+  }
+
   &__sidebar {
     @include col();
+    @include col(lg, 3);
     @include col(xl, 3);
 
-    @media (max-width: ($screen-xl - 1)) {
+    @media (max-width: ($screen-lg - 1)) {
       display: none;
     }
   }
 
   &__showcase {
     @include col();
+    @include col(lg, 9);
     @include col(xl, 9);
     margin-bottom: 40px;
-  }
-
-  &__sorting {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 35px;
-
-    .sort-item {
-      margin-right: 15px;
-
-      &__title {
-        font-size: 16px;
-        line-height: 18px;
-      }
-    }
   }
 
   &__list {

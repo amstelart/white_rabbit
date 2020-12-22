@@ -1,0 +1,43 @@
+// В этом файле должны быть стили для БЭМ-блока catalog-sort, его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.catalog-sort {
+
+  $block-name:                &; // #{$block-name}__element
+
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+
+  &__item {
+    margin-right: 15px;
+    display: flex;
+
+    &:last-child {
+
+      @media (max-width: ($screen-lg - 1)) {
+        display: none;
+      }
+    }
+  }
+
+  .field-select {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+  .field-select__name {
+    margin-bottom: 0.4em;
+    margin-top: 0.4em;
+    font-weight: 400;
+  }
+  .field-select__select {
+    padding: 5px 30px 5px 10px;
+    border: none;
+    font-weight: 700;
+  }
+}

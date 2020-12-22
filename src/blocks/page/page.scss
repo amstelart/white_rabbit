@@ -92,6 +92,14 @@ img {
   height: auto;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+}
+
 .container {
   @include container;
 }
